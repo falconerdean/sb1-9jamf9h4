@@ -153,7 +153,7 @@ const faqs = {
     },
     {
       question: 'Where can I learn more about Natural Medicine-Assisted Therapy research?',
-      answer: 'For evidence-based information about Natural Medicine-Assisted Therapy, we recommend:\n[Insert relevant research organizations]\n[Insert relevant publications or websites]\n[Insert educational resources about natural medicine therapy]'
+      answer: <>For evidence-based information about Natural Medicine-Assisted Therapy, we recommend the Colorado DPO Natural Medicine Program Website at: <a href="https://dpo.colorado.gov/NaturalMedicine" className="text-[rgb(var(--color-persian-green))] hover:underline">https://dpo.colorado.gov/NaturalMedicine</a></>
     }
   ]
 };
