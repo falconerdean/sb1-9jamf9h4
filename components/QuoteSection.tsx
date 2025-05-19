@@ -12,15 +12,15 @@ export function QuoteSection() {
           <div className="flex flex-col justify-center">
             <div className="mb-16">
               <div className="relative flex justify-center">
-                <span className="absolute -top-8 left-0 text-[80px] text-[#536c46]/30 quote-text">"</span>
-                <blockquote className="text-3xl md:text-6xl lg:text-7xl quote-text leading-tight mx-12">
+                <span className="absolute -top-8 -left-1 text-[80px] text-[#536c46]/30 quote-text">"</span>
+                <blockquote className="text-2xl md:text-4xl lg:text-5xl quote-text leading-tight mx-12">
                   <span className="text-[#536c46]">Nothing is </span>
                   <span className="text-orange">Impossible</span>
                   <span className="text-[#536c46]">.</span><br />
                   <span className="text-[#536c46]">The word itself says,</span><br />
                   <span className="text-orange">I'm possible!</span>
                 </blockquote>
-                <span className="absolute -bottom-12 right-0 text-[80px] text-[#536c46]/30 quote-text">"</span>
+                <span className="absolute -bottom-8 -right-4 text-[80px] text-[#536c46]/30 quote-text">"</span>
               </div>
             </div>
 

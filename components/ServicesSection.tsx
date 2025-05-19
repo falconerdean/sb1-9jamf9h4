@@ -1,9 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import mentalHealthImage from '@/public/images/services/mental-health.webp';
-import substanceAbuseImage from '@/public/images/services/substance-abuse.webp';
-import mensHealthImage from '@/public/images/services/mens-health.webp';
+import mentalHealthImage from '@/public/images/services/mental-health copy.webp';
+import substanceAbuseImage from '@/public/images/services/substance.webp';
+import mensHealthImage from '@/public/images/services/mens-mental.webp';
 import { Button } from '@/components/ui/button';
 
 export function ServicesSection() {

@@ -20,7 +20,7 @@ export function ServiceCard({ title, description, image, points, badgeImage }: S
           src={image}
           alt={title}
           fill
-          className="object-cover"
+          className={title === "Military-Focused Care" ? "object-contain p-4" : "object-cover"}
         />
       </div>
       <div className="grid grid-rows-[auto_1fr_auto] h-full gap-3">
