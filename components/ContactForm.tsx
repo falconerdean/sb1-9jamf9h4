@@ -21,6 +21,8 @@ type FormData = z.infer<typeof formSchema>;
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   
+  const formName = "contact-form";
+  
   const {
     register,
     handleSubmit,
@@ -48,7 +50,14 @@ export function ContactForm() {
     <div className="bg-[#BAAC85] rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-8 transform transition-transform duration-300 hover:translate-y-[-4px]">
       <h3 className="text-2xl font-serif text-white mb-6">Contact Us with Questions or to Schedule a Free Consultation</h3>
       
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+      <form
+        name={formName}
+        data-netlify="true"
+        onSubmit={handleSubmit(onSubmit)}
+        className="space-y-6"
+      >
+        <input type="hidden" name="form-name" value={formName} />
+        
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-text-dark mb-2">
             Your Name

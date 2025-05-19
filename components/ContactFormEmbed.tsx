@@ -21,6 +21,8 @@ type FormData = z.infer<typeof formSchema>;
 export function ContactFormEmbed() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   
+  const formName = "contact-form-embed";
+  
   const {
     register,
     handleSubmit,
@@ -48,7 +50,14 @@ export function ContactFormEmbed() {
     <div className="bg-[#BAAC85] rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-8">
       <h3 className="text-2xl font-serif text-white mb-6">Get in Touch</h3>
       
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+      <form
+        name={formName}
+        data-netlify="true"
+        onSubmit={handleSubmit(onSubmit)}
+        className="space-y-6"
+      >
+        <input type="hidden" name="form-name" value={formName} />
+        
         <div>
           <Input
             {...register('name')}
